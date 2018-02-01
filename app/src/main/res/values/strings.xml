@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">CustomView</string>
+
+    <string-array name="click_item">
+        <item>滑动图片解锁</item>
+        <item>待定</item>
+        <item>待定</item>
+        <item>待定</item>
+    </string-array>
 </resources>
