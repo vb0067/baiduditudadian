@@ -3,8 +3,8 @@
 
     <string-array name="click_item">
         <item>滑动图片解锁</item>
-        <item>待定</item>
-        <item>待定</item>
+        <item>百度地图</item>
+        <item>添加包名</item>
         <item>待定</item>
     </string-array>
 </resources>

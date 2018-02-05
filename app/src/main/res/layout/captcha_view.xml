@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    tools:context="com.yangxuqiang.customview.ui.MainActivity">
+
+    <FrameLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/accessRight"
+            android:background="#7F000000"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+
+            <ImageView
+                android:src="@drawable/right"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/accessText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"
+                android:text="验证通过,耗时1000毫秒"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accessFailed"
+            android:background="#7F000000"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="28dp">
+
+            <ImageView
+                android:src="@drawable/wrong"
+                android:layout_marginLeft="10dp"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/accessFailedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    
+    <com.yangxuqiang.customview.view.SlideCaptchaView.TextSeekBar
+        android:id="@+id/seekbar"
+        android:thumbOffset="0dp"
+        android:thumb="@drawable/thumb"
+        android:progressDrawable="@drawable/po_seekbar"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
